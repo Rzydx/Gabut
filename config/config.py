@@ -358,3 +358,8 @@ if not MUSIC_BOT_NAME.isascii():
         "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
     )
     sys.exit()
+
+if str(getenv("LOG_SESSION")).strip() == "":
+    LOG_SESSION = str(None)
+else:
+    LOG_SESSION = str(getenv("LOG_SESSION"))
