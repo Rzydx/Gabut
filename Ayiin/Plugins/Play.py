@@ -158,7 +158,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎Title: **{title}\n⏳Durasi Coli:** {duration_min} Mins\n💡[More Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -189,7 +189,7 @@ async def play(_, message: Message):
         )
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎Title: **{title}\n⏳Durasi Coli:** {duration_min} Mins\n💡[More Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
@@ -270,7 +270,7 @@ async def search_query_more(_, CallbackQuery):
     med = InputMediaPhoto(
         media="Utils/ayiin.jpg",
         caption=(
-            f"¹ <b>{results[0]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n² <b>{results[1]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n³ <b>{results[2]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁴ <b>{results[3]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁵ <b>{results[4]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ"
+            f"¹ <b>{results[0]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n² <b>{results[1]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n³ <b>{results[2]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁴ <b>{results[3]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁵ <b>{results[4]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ"
         ),
     )
     buttons = search_markup(
@@ -319,7 +319,7 @@ async def popat(_, CallbackQuery):
             query,
         )
         await CallbackQuery.edit_message_text(
-            f"⁶ <b>{results[5]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[5]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁷ <b>{results[6]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[6]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁸ <b>{results[7]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[7]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁹ <b>{results[8]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[8]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n¹⁰ <b>{results[9]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[9]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ",
+            f"⁶ <b>{results[5]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[5]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁷ <b>{results[6]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[6]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁸ <b>{results[7]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[7]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁹ <b>{results[8]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[8]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n¹⁰ <b>{results[9]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[9]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
         disable_web_page_preview = True
@@ -340,7 +340,7 @@ async def popat(_, CallbackQuery):
             query,
         )
         await CallbackQuery.edit_message_text(
-            f"¹ <b>{results[0]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n² <b>{results[1]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n³ <b>{results[2]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁴ <b>{results[3]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁵ <b>{results[4]['title']}</b>\n  ┗  💡 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']})__</u>\n ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ",
+            f"¹ <b>{results[0]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[0]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n² <b>{results[1]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[1]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n³ <b>{results[2]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[2]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁴ <b>{results[3]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[3]['id']})__</u>\n  ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ\n\n⁵ <b>{results[4]['title']}</b>\n  ┗  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{results[4]['id']})__</u>\n ┗ ⚡ Powered by ɴɪsᴋᴀʟᴀ ✘ ʀᴏʙᴏᴛ",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
         disable_web_page_preview = True
@@ -377,7 +377,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎Title: **{title}\n⏳Durasi Coli:** {duration_min} Mins\n💡[More Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -400,7 +400,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎Title: **{title}\n⏳Durasi Coli:** {duration_min} Mins\n💡[More Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
